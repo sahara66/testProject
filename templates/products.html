@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ category.name }}</h1>
+<hr>
+{% for product in products %}
+    <h4>Имя: {{ product.name }}</h4>
+    <p>Цена: {{ product.price }}</p>
+    <p>Отзыв: {{ product.review }}</p>
+    <hr>
+{% endfor %}
+
+</body>
+</html>
